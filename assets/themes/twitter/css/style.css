@@ -1,13 +1,26 @@
 /* Custom container */
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+body {
+  padding-top: 40px;
+}
+
+.brand_title { padding-left: 10px; }
+
+.nav_menu {
+  padding-right: 50px;
+}
+
+#brand_logo {
+  padding-left: 50px;
+}
+
 .container-narrow {
   margin: 0 auto;
-  max-width: 700px; }
+  max-width: 1100px; }
 
 .container-narrow > hr {
   margin: 30px 0; }
-
-.navbar .nav {
-  float: right; }
 
 /* posts index */
 .post > h3.title {
@@ -63,3 +76,91 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* reset, globals */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+* { padding: 0; margin: 0; list-style: none; }
+html { background: white url(../images/html-bg.jpg) top center repeat-x; }
+body { font-family: Arial, Helvetica, sans-serif; background: url(../images/body-bg.jpg) center 62px no-repeat; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { clear: both; float: none; }
+a:link { text-decoration: none; }
+a:focus { outline: none; }
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* header */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+#siteHeader { position: relative; float: left; height: 400px; width: 100%; z-index: 20; margin-top: 15px; }
+.headerDescription { position: absolute; top: 60px; left: 70px; width: 450px; }
+.headerDescription p.visibleH1 a { color: #045B76; font-size: 3em; line-height: 100%; font-weight: normal; margin-bottom: 10px; text-decoration: none; }
+.headerDescription p.visibleH2 { color: #0C8AA7; font-size: 2em; line-height: 140%; font-weight: normal; margin: 0; }
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* navMain */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+#navMain { position: fixed; z-index: 90; top: 0; left: 0; height: 63px; overflow-y: hidden; width: 100%; line-height: 150%; background: #1d2023 url(../images/nav-bg.png) top center repeat-x; }
+#navMain nav { width: 960px; margin: 0 auto; }
+#navMain ul { float: right; }
+#navMain li { float: right; position: relative; }
+#navMain li a { color: #dbe3e7; display: block; text-shadow: 0 1px 0 rgba(0,0,0,1); text-decoration: none; padding: 12px 25px 25px 25px; margin: -15px 1px 0 0; border-right: 1px solid rgba(255, 255, 255, 0); border-left: 1px solid rgba(255, 255, 255, 0); -webkit-transition: all .1s ease-in; -moz-transition: all .1s ease-in; -ms-transition: all .1s ease-in; -o-transition: all .1s ease-in; transition: all .1s ease-in; }
+.ie7 #navMain nav ul li a,
+.ie8 #navMain nav ul li a { border-right: 1px solid transparent; border-left: 1px solid transparent; }
+#navMain nav a:hover { background: rgba(255,255,255,0.1); border-left: 1px solid rgba(255, 255, 255, 0.07); border-right: 1px solid rgba(255, 255, 255, 0.07); color: white; }
+#navMain nav .active a,
+#navMain nav .current-page-ancestor a { background: rgba(255, 255, 255, 0.15); color: white; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7); position: relative; border-right: 1px solid rgba(255, 255, 255, 0.08); border-left: 1px solid rgba(255, 255, 255, 0.08); }
+.ie7 #navMain nav a:hover,
+.ie8 #navMain nav a:hover,
+.ie7 #navMain nav .active a,
+.ie7 #navMain nav .current-page-ancestor a,
+.ie8 #navMain nav .active a,
+.ie8 #navMain nav .current-page-ancestor a { background: #323538; border-left: 1px solid #404346; border-right: 1px solid #404346; }
+/* logo ---------------------------------------------------------------------------------------------------------------------------------- */
+
+#navMain h1 a { float: left; width: 255px; height: 63px; display: block; margin: -22.8px 60px 0 -54px; text-indent: -9999px; background: url('../images/webdeva.png') no-repeat 14px 16px; border-right: 1px solid rgba(255, 255, 255, 0); border-left: 1px solid rgba(255, 255, 255, 0); }
+.ie7 #navMain h1 a,
+.ie8 #navMain h1 a { border-right: 1px solid transparent; border-left: 1px solid transparent; }
+#navMain h1 a:hover { background: rgba(255,255,255,0.05) url('../images/webdeva.png') no-repeat 14px 16px; }
+.ie7 #navMain h1 a:hover,
+.ie8 #navMain h1 a:hover { background: #323538 url('../images/webdeva.png') no-repeat 14px 16px; border-left: 1px solid #404346; border-right: 1px solid #404346; }
+
+.one-edge-shadow {
+  border-right: 1.5px solid #9ab8ed; padding: 17px;
+  border-radius: 1%;
+  -webkit-box-shadow: 3px 0px 20px -2px #7ba5e4;
+     -moz-box-shadow: 3px 0px 20px -2px #7ba5e4;
+          box-shadow: 3px 0px 20px -2px #7ba5e4;
+
+background: -webkit-radial-gradient(50% 0%, 50% 15px, #EB8CF2 0%, white 100%);
+}
+
+#sub {
+  color: #7ba5e4;
+}
+
+.one-edge-shadow1 {
+  border-right: 1px solid #9ab8ed;
+  background: -webkit-radial-gradient(140% 50%, 50% 80%, #EB8CF2 60%, white 100%);
+   -webkit-box-shadow: 3px 0px 20px -2px #7ba5e4;
+     -moz-box-shadow: 3px 0px 20px -2px #7ba5e4;
+          box-shadow: 3px 0px 2px -2.5px #7ba5e4;
+}   
+
+.hr {
+  border: 1 dashed #7B7C7C;
+  height: 0.5em;
+}
+
+#post_bottom_border {
+  background-image: url('../images/sprite-1.png');
+  background-position: -332px -484px; 
+  width: 547px;
+  height: 22px;
+}
