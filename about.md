@@ -21,7 +21,7 @@ weight: 5
 {% assign group = nil %}
 
 <ol class="breadcrumb alert-info">
-  <li><a href="index.html">Home</a></li>
+  <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
   <li class="active">About Us</li>
 </ol>
 <div class="row">

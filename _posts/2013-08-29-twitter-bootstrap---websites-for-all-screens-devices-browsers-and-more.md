@@ -4,6 +4,7 @@ title: "Twitter Bootstrap   Websites for all Screens, Devices, Browsers and more
 description: /assets/themes/twitter/images/dipesh1.jpg
 author: Dipesh Bhardwaj
 category: lessons 
+tags: []
 excerpt: "Twitter Bootstrap (mainly known as **Bootstrap** only) is a framework developed by Mark Otto and Jacob Thornton when they were creating Twitter (that is why some people call it Twitter Bootstrap).
 
 Bootstrap is a fast, intuitive and powerful front-end framework for faster and easier web development. It gives you all the tools you need to make websites, web applications and prototypes.
@@ -13,7 +14,6 @@ Bootstrap has template files, as well as a lot of optional JavaScript extensions
 As if that was not enough, it also comes with styles for buttons, forms, tables,  typography and a collection of over 140 icons in both black and white versions.
 
 Another very important..."
-tags: []
 ---
 {% include JB/setup %}
 

@@ -1,8 +1,19 @@
 ---
 layout: post
+description: "/assets/themes/twitter/images/revimg.png"
+author: Ksenia Dylova
 category : lessons
 tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+tags : []
+excerpt: "Twitter Bootstrap (mainly known as **Bootstrap** only) is a framework developed by Mark Otto and Jacob Thornton when they were creating Twitter (that is why some people call it Twitter Bootstrap).
+
+Bootstrap is a fast, intuitive and powerful front-end framework for faster and easier web development. It gives you all the tools you need to make websites, web applications and prototypes.
+
+Bootstrap has template files, as well as a lot of optional JavaScript extensions that allow you to make modal windows, drop down menus, tab controls and carousel controls, which are all styled in advance, saving you from the trouble.
+
+As if that was not enough, it also comes with styles for buttons, forms, tables,  typography and a collection of over 140 icons in both black and white versions.
+
+Another very important..."
 ---
 {% include JB/setup %}
 

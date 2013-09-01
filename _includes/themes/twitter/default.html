@@ -19,6 +19,8 @@
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -36,18 +38,18 @@
   <body>
 
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 
     <div id="navMain">
   <nav>
-    <h1><a href="index.html" rel="home" title="For the Home"></a></h1>
+    <h1><a href="../index.html" rel="home" title="For the Home"></a></h1>
     <ul id="menu-navmain" class="menu">
       {% assign pages_list = site.pages %}
       {% assign group = 'navbar' %}
@@ -72,14 +74,116 @@
         {{ content }}
       </div>
       <hr>
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
     </div>
+<!-- ##########################################################################################################################################################################################FOOTER START###########################################################################################################################################################################################-->
+    <div>
+      <footer>
+        <div>
+          <section id="contact">
+          <div class="container-narrow">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 style="text-align:center">Web Development Tutorials</h3>
+                <p style="text-align:center">Welcome to our library of web design and development terms and concepts that you can reffer to over and over again as you build better products.</p>
+              </div>
+              <div class="col-md-3 footer-border">
+                <div class="row">
+                  <div class="col-md-2 col-md-offset-5 want-more"></div>
+                </div>  
+                <h3 style="text-align:center">Want More?</h3>
+                <p style="text-align:center"><a href="">Post</a></p>
+                <p style="text-align:center"><a href="">Tutorial</a></p>
+                <p style="text-align:center"><a href="">Tips</a></p>
+                <p style="text-align:center"><a href="">Snippets</a></p>
+              </div>
+              <div class="col-md-3 footer-border">
+                <div class="row">
+                  <div class="col-md-2 col-md-offset-5 talk-to-us"></div>
+                </div>
+                <h3 style="text-align:center">Talk to us</h3>
+                <p style="text-align:center">Got an idea for Web Development Tutorials</p>
+                <p style="text-align:center"><a href="mailto:webdev.tuts@gmail.com">webdev.tuts@gmail.com</a></p>
+                <br>
+              </div>
+              <div class="col-md-3 footer-border fish">
+                <div class="row">
+                  <div class="col-md-3 col-md-offset-4 stay-in-touch"></div>
+                </div>
+                <h3 style="text-align:center">Stay in touch</h3>
+                <p style="text-align:center">Get web design and development lessons in your inbox.</p>
+                <br>
+                <br>
+              </div>
+            </div>
+            <hr>
+            <h4>Some Usefull Links</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="tutorials.html">Tutorials</a></li>
+                  <li><a href="resources.html">Resources</a></li>
+                  <li><a href="hacks.html">Hacks</a></li>
+                  <li><a href="challenges.html">Challenges</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+                  <li><a href="pages.html">Pages</a></li>
+                  <li><a href="history.html">History</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="submit.html">Submit Posts or Queries</a></li>
+                  <li><a href="tags.html">Tags</a></li>
+                  <li><a href="categories.html">Categories</a></li>
+                  <li><a href="archive.html">Archive</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>   
+          </section>
+        </div>    
+
+        <div class="footer-end">
+          <div class="container-narrow">
+            <h3 style="color:#bdc8ce">Web Development Tutorials</h3>
+            <h5>2013 Copyright &copy; - All Rights Reserved.<br><br>Designed and Developed By <a href="">Dipesh Bhardwaj</a> on <a href="">jekyll</a></h5>
+          </div>
+        </div>        
+        <!--Scroll back to top-->
+
+<div class="back-to-top" id="back-top">
+  <a href="javascript:void(0)" class="back-to-top">Top</a>
+</div>
+    
+        
+<script type="text/javascript">
+$(function () {
+    $("#back-top").hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {
+            $('#back-top').fadeIn();
+        } else {
+            $('#back-top').fadeOut();
+        }
+    });
+});
+jQuery('.back-to-top').click(function () {
+    jQuery('html, body').animate({
+        scrollTop: 0
+    }, 'slow');
+});
+</script>
+
+
+<!--end of Scroll back to top-->
+      </footer>
+    </div>
+<!-- ##########################################################################################################################################################################################FOOTER START###########################################################################################################################################################################################-->
 
     {% include JB/analytics %}
 
@@ -87,21 +191,40 @@
     <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/typeahead.js"></script>
+    <script src="{{ ASSET_PATH }}/js/custom.js"></script>
     <script type="text/javascript">
         $('.tooltip-test').tooltip();
     </script>
 
-    <!-- Twutter -->
+    <!-- Twitter -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
     </script>
 
-    <!-- Add this just before the closing body tag of your web page --> 
+    <!-- Add this just before the closing body tag of your web page -->
     <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  
+            <script type="text/javascript">
+              $('#typeahead').typeahead({                              
+                name: 'example',                                                             
+                local: [
+                      'Salt Lake City',
+                      'Provo',
+                      'Ogden',
+                      'Bountiful',
+                      'Orem',
+                      'Centerville',
+                      'St. George',
+                      'Cedar City',
+                      'Hurricane',
+                ]                                                                           
+              });
             </script>
   </body>
 </html>

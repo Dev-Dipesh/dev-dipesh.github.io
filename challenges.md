@@ -18,3 +18,8 @@ weight: 4
 {% endfor %}
 {% assign pages_list = nil %}
 {% assign group = nil %}
+
+<ol class="breadcrumb alert-info">
+  <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+  <li class="active">Challenges</li>
+</ol>
