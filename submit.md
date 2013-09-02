@@ -1,18 +1,29 @@
 ---
 layout: page
-title: "Submit"
-description: ""
+title: "Submit Post" 
+header: "Submit Post"
+group: navigation
 ---
 {% include JB/setup %}
 
-<h1>
-  Contact
-</h1>
-<p>
-  I am very open to meeting and getting in touch with new people who share my same interests, so please feel free to contact me by filling out the form below; I’ll get back to you shortly.
-</p>
-<p>
-  You may also follow me on twitter.
-</p>
+<div class="container clear">
+<header id="siteHeader">
+  <div class="headerDescription">
+    <p class="visibleH1"><a href="#" title="For the Home Blogs">Blog</a></p>
+    <p class="visibleH2">Posts, tutorials, tips &amp; snippets about web design and social media. </p><p>
+  </p></div>
+</header>
+</div>
 
-<iframe class="submit-post" frameBorder="0" src="/submit-post/"></iframe>
+<div class="container-narrow">
+  <div class="content">
+  	<div class="page-header">
+  		<h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+	</div>
+    <ol class="breadcrumb alert-info">
+	  <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+	  <li class="active">Submit Posts</li>
+	</ol>
+   </div>
+  <hr />
+</div>

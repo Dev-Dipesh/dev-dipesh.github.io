@@ -30,7 +30,21 @@ body {
 
 * { padding: 0; margin: 0; list-style: none; }
 html { background: white url(../images/html-bg.jpg) top center repeat-x; }
-body { font-family: Arial, Helvetica, sans-serif; background: url(../images/body-bg.jpg) center 62px no-repeat; }
+.bodybg { font-family: Arial, Helvetica, sans-serif; background: url(../images/body-bg.jpg) center 62px no-repeat; margin-top: -39px;}
+
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* header */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+#siteHeaderHome { width: 100%; height:300px; background:#013848 url(../images/bg-rpt-petrol.png) top center repeat; position:relative; font-size:1.4em; }
+.ie7 #siteHeaderHome { height:360px; }
+#siteHeaderHome:after { height:252px; width:100%; position:absolute; bottom:0; content:''; background:url(../images/header-bottom.png) top center no-repeat; }
+#siteHeaderHome .imageContainer, #siteHeaderHome .headerImage { width:100%; height:100%; margin-top:22px; background:url(../images/default.jpg) top center no-repeat; }
+#siteHeaderHome .container { font-size:1em; text-shadow:0 1px 1px rgba(0,0,0,1); z-index:20; }
+.headerDescription1 { position: absolute; top: 14%; left: 11%; width: 450px; color: #ffffff;}
+.headerDescription1 a { color: #ffffff; font-size: 3em; line-height: 100%; font-weight: normal; margin-bottom: 10px; text-decoration: none; }
+.headerDescription1 small { color: #ffffff; line-height: 140%; font-weight: normal; margin: 0; }
 
 h1,
 h2,
@@ -45,7 +59,7 @@ a:focus { outline: none; }
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 #siteHeader { position: relative; float: left; height: 400px; width: 100%; z-index: 20; margin-top: 15px; }
-.headerDescription { position: absolute; top: 60px; left: 70px; width: 450px; }
+.headerDescription { position: absolute; top: 23%; left: 70px; width: 450px; }
 .headerDescription p.visibleH1 a { color: #045B76; font-size: 3em; line-height: 100%; font-weight: normal; margin-bottom: 10px; text-decoration: none; }
 .headerDescription p.visibleH2 { color: #0C8AA7; font-size: 2em; line-height: 140%; font-weight: normal; margin: 0; }
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
@@ -619,4 +633,470 @@ border-bottom:1px solid #575b61; color:white; }
   background-position: -10px -184px; 
   width: 338px;
   height: 180px;
+}
+
+/* General button style (reset) */
+.btn1 {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 60px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn1:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Button 8 */
+.perspective {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  display: inline-block;
+}
+
+.btn-8 {
+  display: block;
+  background: #69C773;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.btn-8:active {
+  background: #72D27C;
+}
+
+/* Button 8b */
+.btn-8b:after {
+  width: 100%;
+  height: 40%;
+  left: 0;
+  top: 100%;
+  background: #449451;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform-origin: 0% 0%;
+  -moz-transform: rotateX(-90deg);
+  -ms-transform-origin: 0% 0%;
+  -ms-transform: rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+}
+
+.btn-8b:hover {
+  -webkit-transform: rotateX(15deg);
+  -moz-transform: rotateX(15deg);
+  -ms-transform: rotateX(15deg);
+  transform: rotateX(15deg);
+}
+
+#line1 {
+  line-height: 160%;
+  color: #000000;
+}
+
+#backg {
+  background: transparent url(../images/backg.png);
+  overflow: hidden;
+}
+
+.widget {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  background: #fff;
+  background: linear-gradient(180deg,#fff,#fdfdfd 90%,#f5f5f5 100%);
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.widget img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marg {
+  padding-top: 6%;
+}
+
+.south-downs {
+
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 360px;
+  bottom: -10px;
+  margin-top: 100px;
+  background: transparent url(../images/shade.png) repeat-x bottom;
+}
+
+.south-downs .backdrop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 10px;
+  background: transparent;
+  background: linear-gradient(180deg,rgba(99,203,252,0),rgba(99,203,252,.7) 50%,rgba(99,203,252,.8) 60%);
+}
+
+.south-downs .clouds {
+position: absolute;
+width: 100%;
+height: 200px;
+overflow: hidden;
+top: 30px;
+}
+
+.south-downs .cloud-1 {
+position: absolute;
+width: 84px;
+height: 30px;
+top: 80px;
+left: 700px;
+background: transparent url(../images/waves/cloud1.png);
+-webkit-animation: cloud-1 30s infinite linear;
+}
+
+.south-downs .cloud-2 {
+position: absolute;
+width: 107px;
+height: 34px;
+top: 30px;
+left: 800px;
+background: transparent url(../images/waves/cloud2.png);
+-webkit-animation: cloud-2 40s infinite linear;
+}
+
+.south-downs .hills {
+position: absolute;
+width: 100%;
+height: 51px;
+top: 160px;
+background: transparent url(../images/waves/hills.png);
+}
+
+.south-downs .three-trees.background {
+position: absolute;
+width: 30px;
+height: 25px;
+top: 138px;
+left: 20%;
+background: transparent url(../images/waves/threetrees.png);
+}
+
+.south-downs .three-trees.background2 {
+position: absolute;
+width: 30px;
+height: 25px;
+top: 140px;
+left: 93%;
+background: transparent url(../images/waves/threetrees.png);
+}
+
+.south-downs .land {
+position: absolute;
+width: 100%;
+height: 139px;
+top: 211px;
+background: #70a85e;
+}
+
+.south-downs .two-trees {
+width: 66px;
+height: 80px;
+background: transparent url(../images/waves/twotreesfor.png);
+}
+
+.south-downs .two-trees.foreground {
+position: absolute;
+top: 134px;
+left: 30%;
+}
+
+.south-downs .two-trees.foreground2 {
+position: absolute;
+top: 132px;
+right: 20%;
+}
+
+.south-downs .spinnaker-tower {
+position: absolute;
+width: 89px;
+height: 215px;
+top: 40px;
+left: 60px;
+background: transparent url(../images/waves/spinnaker.png);
+}
+
+.south-downs .brighton {
+position: absolute;
+width: 165px;
+height: 135px;
+top: 130px;
+right: 100px;
+background: transparent url(../images/waves/brighton.png);
+}
+
+.south-downs .chichester {
+position: absolute;
+width: 172px;
+height: 148px;
+top: 110px;
+left: 29%;
+margin-left: -94px;
+background: transparent url(../images/waves/chichester.png);
+}
+
+.south-downs .waves {
+position: absolute;
+width: 100%;
+height: 52px;
+top: 298px;
+left: 0;
+overflow: hidden;
+}
+
+.south-downs .background-waves {
+position: absolute;
+width: 200%;
+height: 42px;
+bottom: 8px;
+-webkit-transform: translate3d(-60px,8px,0);
+background: transparent url(../images/waves/backwaves.png);
+-webkit-animation: background-waves 2s linear infinite;
+}
+
+.south-downs .foreground-waves {
+position: absolute;
+width: 200%;
+height: 42px;
+bottom: 0;
+-webkit-transform: translate3d(0,0,0);
+background: transparent url(../images/waves/forwaves.png);
+-webkit-animation: foreground-waves 3s linear infinite;
+}
+
+.south-downs .boat {
+position: absolute;
+width: 250px;
+height: 248px;
+top: 110px;
+left: 49%;
+margin-left: -94px;
+background: transparent url(../images/waves/boat.png) no-repeat;
+}
+
+.widget .ribbon {
+display: block;
+position: absolute;
+z-index: -1;
+width: 80px;
+height: 70px;
+padding-top: 16px;
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+text-shadow: 1px -1px rgba(0,0,0,.2);
+text-align: center;
+line-height: 18px;
+background: #008ccc;
+background: linear-gradient(180deg,#007bb3,#008ccc);
+transition: all 250ms;
+bottom: -70px;
+left: 39%;
+}
+
+.widget .ribbon:after {
+position: absolute;
+width: 80px;
+height: 13px;
+bottom: -13px;
+left: 0;
+background: url(../images/widget.png);
+content: '';
+}
+
+.ribbon a {
+   text-decoration:none; 
+   color:#ffffff; 
+   font-family:inherit
+}
+
+.ribbon a:hover { 
+   color:#ffffff; 
+   font-family:inherit
+}
+
+#d3 {
+  
+  color: #fff;
+}
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+#clouds1{
+  padding: 100px 0;
+  /*background: #c9dbe9;
+  background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 200px; height: 60px;
+  background: #fff;
+  
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  
+  position: absolute; 
+}
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute; 
+  background: #fff;
+  width: 100px; height: 80px;
+  position: absolute; top: -15px; left: 10px;
+  
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px; height: 120px;
+  top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+.xb1 {  
+  -webkit-animation: moveboat 15s linear infinite;
+  -moz-animation: moveboat 15s linear infinite;
+  -o-animation: moveboat 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 185px;
+  top: 110px;  
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+  
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+  left: -250px; top: 80px;
+  
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+  
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+  left: 165px;
+  top: 60px;
+  
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75; /*opacity proportional to the size*/
+  
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+  left: 150px;
+  top: 10px;
+  
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+  
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+  0% {margin-left: 1000px;}
+  100% {margin-left: -1000px;}
+}
+
+@-webkit-keyframes moveboat {
+  0% {margin-left: -1000px;}
+  100% {margin-left: 1000px;}
+}
+@-moz-keyframes moveboat {
+  0% {margin-left: -1000px;}
+  100% {margin-left: 1000px;}
+}
+@-o-keyframes moveboat {
+  0% {margin-left: -1000px;}
+  100% {margin-left: 1000px;}
 }
