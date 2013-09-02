@@ -894,6 +894,10 @@ background: transparent url(../images/waves/backwaves.png);
 -webkit-animation: background-waves 2s linear infinite;
 }
 
+canvas {
+  display: block;
+}
+
 .south-downs .foreground-waves {
 position: absolute;
 width: 200%;
