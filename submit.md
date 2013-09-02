@@ -6,6 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<div class="bodybg">
 <div class="container clear">
 <header id="siteHeader">
   <div class="headerDescription">
@@ -26,4 +27,5 @@ group: navigation
 	</ol>
    </div>
   <hr />
+</div>
 </div>

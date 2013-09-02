@@ -20,6 +20,7 @@ weight: 5
 {% assign pages_list = nil %}
 {% assign group = nil %}
 
+<div class="bodybg">
 <div class="container clear">
 <header id="siteHeader">
   <div class="headerDescription">
@@ -88,4 +89,5 @@ And in this long text you have met most of the co-leaders of our group. Except f
 </div>
 </div>
 <hr />
+</div>
 </div>

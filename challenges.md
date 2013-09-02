@@ -19,6 +19,7 @@ weight: 4
 {% assign pages_list = nil %}
 {% assign group = nil %}
 
+<div class="bodybg">
 <div class="container clear">
 <header id="siteHeader">
   <div class="headerDescription">
@@ -39,4 +40,5 @@ weight: 4
 </ol>
 </div>
 <hr />
+</div>
 </div>
