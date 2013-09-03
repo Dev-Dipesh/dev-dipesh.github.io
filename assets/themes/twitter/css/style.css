@@ -852,7 +852,7 @@ position: absolute;
 width: 89px;
 height: 215px;
 top: 40px;
-left: 60px;
+left: 5%;
 background: transparent url(../images/waves/spinnaker.png);
 }
 
@@ -861,7 +861,7 @@ position: absolute;
 width: 165px;
 height: 135px;
 top: 130px;
-right: 100px;
+right: 5%;
 background: transparent url(../images/waves/brighton.png);
 }
 
@@ -956,7 +956,7 @@ content: '';
 
 .ribbon a:hover { 
    color:#ffffff; 
-   font-family:inherit
+   font-family:inherit;
 }
 
 #d3 {
