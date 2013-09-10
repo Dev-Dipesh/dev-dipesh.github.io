@@ -9,37 +9,26 @@ www.dev-dipesh.github.io
 
 ###################### -=[ TABLE OF CONTENTS ]=- ##########################
 
-    GLOBAL .........................45
-    HEADER .........................63
-    TOP BANNER INDEX & 404 page ....65
-    PAGE HEADER ....................96
-    BREADCRUMP.....................138
-    NEADHEAD.......................164
-    PORTFOLIO......................284
-    SOCIAL LINIKS ON TOP...........372
-    NAVIGATION MENU & DROPDOWNS....431
-    MARKETING SECTION..............942
-    TOP SLIDER....................1051
-    PORTFOLIO & CLIENTS ROTATOR...1101
-    FEATURES <P>..................1177
-    BLOG & BLOG CATEGORIES........1196
-    PINTEREST STYLE BLOG..........1655
-    PROJECTS ITEMS,FILTERS, 
-    & ISOTOPE ....................1826
-    SINGL PROJECT.................1990
-    RESPONSIVE VIDEO..............2022
-    CUSTOM FONT SIZES.............2039
-    SCROLL TO TOP.................2092
-    CUSTOM BUTTON ................2124
-    CUSTOM LINES..................2193
-    CUSTOM TITLES.................2312
-    CUSTOM WORD COLORS............2336
-    SITEMAP.......................2348
-    404 page......................2395
-    FOOTER .......................2432
-    RESPONSIVE MAP................2523
-    CUSTOM STYLE <hr/> ...........2554
-    @MEDIA .......................2595
+    GLOBALS .........................................................34
+    Brand Title and Logo ............................................68
+    Top Banner (Home) ...............................................85
+    Top Banner (Other) ..............................................99
+    navMain - Navigation Bar.........................................109
+    Border and Shadows - one-edge-shadow,1,2,3.......................134
+    Posts Bottom Shadow - post_bottom_border.........................170
+    Subheading Nimbel Team on About page.............................181
+    Search Box - Twitter typeahead.js................................198
+    Blockquotes - Quick Tips.........................................282
+    Social Icons Showcase............................................376
+    Back to top button CSS...........................................540
+    Pagination.......................................................559
+    Contact (global contact section at the bottom)...................622
+    Footer...........................................................685
+    3D Button on Home Page ..........................................693
+    Sub Line on Home Page (line1)....................................774
+    Texture background on home page..................................783
+    Widget Home Page.................................................792
+    Pure CSS Animation South Downs...................................865
 */
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
@@ -94,7 +83,7 @@ a:focus { outline: none; }
 .ie8 #navMain h1 a:hover { background: #323538 url('../images/webdeva.png') no-repeat 14px 16px; border-left: 1px solid #404346; border-right: 1px solid #404346; }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* Header Image (Home) */
+/* Top banner (Home) */
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 #siteHeaderHome { width: 100%; height:300px; background:#013848 url(../images/bg-rpt-petrol.png) top center repeat; position:relative; font-size:1.4em; }
@@ -108,7 +97,7 @@ a:focus { outline: none; }
 
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* Header Image (Other)*/
+/* Top Banner (Other)*/
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .bodybg { font-family: Arial, Helvetica, sans-serif; background: url(../images/body-bg.jpg) center 62px no-repeat; margin-top: -39px;}
@@ -631,7 +620,7 @@ display: block;
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* contact (global contact section at the bottom) */
+/* Contact (global contact section at the bottom) */
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 #contact { background:#323537 url(../images/bg-rpt-light-grey.png) 0 0 repeat; padding:50px 0; text-shadow:0 1px 1px rgba(0,0,0,1); color:#c3ced4; position:relative; border-top:1px solid black; border-bottom:1px solid #383b3d; }
@@ -694,7 +683,7 @@ border-bottom:1px solid #575b61; color:white; }
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* footer */
+/* Footer */
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .footer-end { padding:25px 0; background:#1d2023 url(../images/bg-rpt-dark-grey.png) 0 0 repeat; color:#535961; text-shadow:0 1px 1px rgba(0,0,0,1); font-size:0.786em; border-top:1px solid #111215; }
@@ -783,7 +772,7 @@ border-bottom:1px solid #575b61; color:white; }
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* Sub Line on Home Page */
+/* Sub Line on Home Page (line1) */
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 #line1 {
