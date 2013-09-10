@@ -1,45 +1,65 @@
-# Jekyll-Bootstrap
+Web Development Tutorials
+======================
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+**Learn to build websites, create stunning CSS effects,
+with the top notch web 2.0 technolgies**
 
-## Usage
+----------
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+## About
+Web Development Tutorials is a website, which provides an extesive library of web development guides, tutorials and challenges which will give you a wide range of competitive, in-demand technology skills that will may help you land your next dream job. No experience? No problem! 
 
-## Version
+It is a library of web design and development terms and concepts that you can reffer to over and over again as you build better products.
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
+## Work In Progress Demo Page
+Head here → [http://dev-dipesh.github.io/](http://dev-dipesh.github.io/)
 
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
+## Snapshots
+![WDT_1]
+(https://dl.dropboxusercontent.com/s/nx4ovzu0m8m9eyf/2013-09-10%2017_28_40-Web%20Develpment%20Tutorials.png )
 
-## Contributing
+![WDT_2](https://dl.dropboxusercontent.com/s/pzelazquyw7j0ga/2013-09-10%2017_30_57-Web%20Develpment%20Tutorials.png)
 
-This repository tracks 2 projects:
+## Tech
 
-- **Jekyll-Bootstrap Framework.**
-  The framework for which users should clone and build their blog on top of is available in the master branch.
+ - Jekyll
+ - HTML 5
+ - CSS 3
+ - Javascript
+ - Liquid
+ - Bootstrap 3.0
+ - Typeahead.js
+ - Ruby
+ - Sinatra
 
-  To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-  This is very important as it allows me to accept your pull request without having to publish a public version release.
+## ✭ Contributing & Pull Requests
+If you'd like to contribute to the [Web Development Tutorials](https://github.com/Dev-Dipesh/dev-dipesh.github.io) project (btw you're awesome for doing so) then we suggest you do the following…
 
-  Small, atomic Features, bugs, etc.
-  Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-  Please rebase as often as possible when working.
-  Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+1. [Fork this Repo](https://github.com/Dev-Dipesh/dev-dipesh.github.io)
+2. Create a new branch on your forked copy of this project.
+3. Submit your branch to [this repo](https://github.com/Dev-Dipesh/dev-dipesh.github.io) as a PR.
+4. Wait for unicorns to appear.
 
-  For Big Features or major API extensions/edits:
-  This is the one case where I'll accept pull-requests based off the master branch.
-  This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-  Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+**:heavy_exclamation_mark: A Note Regarding Pull Requests :**
+Please keep your commits targeted and in a logical fashion in order to keep code review and merges as clean as possible. Generally commits shouldn't be a "save" for authors. Multiple commits sent via a PR can also create chaos when doing something like a ``git bisect`` later on. Rebasing commits from a repo where other contributors have acces can cause major conflicts for those tracking the project through a fork.
 
-- **Jekyll-Bootstrap Documentation Website.**
-  The documentation website at <http://jekyllbootstrap.com> is maintained in the gh-pages branch.
-  Please fork and contribute documentation additions to this branch only.
+- How to rebase your commits before submitting a PR: [http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)
 
-The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!
+## Goals
 
+This project would come with some **goals**:
+
+1. It provides extensive library of web design and development terms and concepts that you can reffer to over and over again as you build better products.
+1. User can download posts as pdf.
+1. Daily Quick Tips are provided regarding web technologies.
+1. Users can request for post on any specific technique or technology.
+1. Challenges are provided to the users to take their knowledge and experience to a completely new level.
+1. Users can also post a tutorial directly from the website.
+
+## Action
+
+* If you have any idea that make sense to include here, file a ticket.
+* If you want something special with the website then file a ticket.
 
 ## License
 
