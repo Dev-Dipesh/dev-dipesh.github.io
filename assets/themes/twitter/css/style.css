@@ -1,19 +1,68 @@
+/*
+"Web Development Tutorials" 
+by Dipesh Bhardwaj
+08.2013
+www.dev-dipesh.github.io
+*/
+
+/*
+
+###################### -=[ TABLE OF CONTENTS ]=- ##########################
+
+    GLOBAL .........................45
+    HEADER .........................63
+    TOP BANNER INDEX & 404 page ....65
+    PAGE HEADER ....................96
+    BREADCRUMP.....................138
+    NEADHEAD.......................164
+    PORTFOLIO......................284
+    SOCIAL LINIKS ON TOP...........372
+    NAVIGATION MENU & DROPDOWNS....431
+    MARKETING SECTION..............942
+    TOP SLIDER....................1051
+    PORTFOLIO & CLIENTS ROTATOR...1101
+    FEATURES <P>..................1177
+    BLOG & BLOG CATEGORIES........1196
+    PINTEREST STYLE BLOG..........1655
+    PROJECTS ITEMS,FILTERS, 
+    & ISOTOPE ....................1826
+    SINGL PROJECT.................1990
+    RESPONSIVE VIDEO..............2022
+    CUSTOM FONT SIZES.............2039
+    SCROLL TO TOP.................2092
+    CUSTOM BUTTON ................2124
+    CUSTOM LINES..................2193
+    CUSTOM TITLES.................2312
+    CUSTOM WORD COLORS............2336
+    SITEMAP.......................2348
+    404 page......................2395
+    FOOTER .......................2432
+    RESPONSIVE MAP................2523
+    CUSTOM STYLE <hr/> ...........2554
+    @MEDIA .......................2595
+*/
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Globals */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡=============== */
+
 /* Custom container */
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
+* { padding: 0; margin: 0; list-style: none; }
+html { background: white url(../images/html-bg.jpg) top center repeat-x; }
 body {
   padding-top: 40px;
 }
 
-.brand_title { padding-left: 10px; }
-
-.nav_menu {
-  padding-right: 50px;
-}
-
-#brand_logo {
-  padding-left: 50px;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { clear: both; float: none; }
+a:link { text-decoration: none; }
+a:focus { outline: none; }
 
 .container-narrow {
   margin: 0 auto;
@@ -22,19 +71,30 @@ body {
 .container-narrow > hr {
   margin: 30px 0; }
 
-
-
-/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* reset, globals */
-/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-
-* { padding: 0; margin: 0; list-style: none; }
-html { background: white url(../images/html-bg.jpg) top center repeat-x; }
-.bodybg { font-family: Arial, Helvetica, sans-serif; background: url(../images/body-bg.jpg) center 62px no-repeat; margin-top: -39px;}
-
+.hr {
+  border: 1 dashed #7B7C7C;
+  height: 0.5em;
+}
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* header */
+/* Brand Title and Logo */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+.brand_title { padding-left: 10px; }
+
+#brand_logo {
+  padding-left: 50px;
+}
+
+#navMain h1 a { float: left; width: 255px; height: 63px; display: block; margin: -22.8px 60px 0 -54px; text-indent: -9999px; background: url('../images/webdeva.png') no-repeat 14px 16px; border-right: 1px solid rgba(255, 255, 255, 0); border-left: 1px solid rgba(255, 255, 255, 0); }
+.ie7 #navMain h1 a,
+.ie8 #navMain h1 a { border-right: 1px solid transparent; border-left: 1px solid transparent; }
+#navMain h1 a:hover { background: rgba(255,255,255,0.05) url('../images/webdeva.png') no-repeat 14px 16px; }
+.ie7 #navMain h1 a:hover,
+.ie8 #navMain h1 a:hover { background: #323538 url('../images/webdeva.png') no-repeat 14px 16px; border-left: 1px solid #404346; border-right: 1px solid #404346; }
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Header Image (Home) */
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 #siteHeaderHome { width: 100%; height:300px; background:#013848 url(../images/bg-rpt-petrol.png) top center repeat; position:relative; font-size:1.4em; }
@@ -46,25 +106,24 @@ html { background: white url(../images/html-bg.jpg) top center repeat-x; }
 .headerDescription1 a { color: #ffffff; font-size: 3em; line-height: 100%; font-weight: normal; margin-bottom: 10px; text-decoration: none; }
 .headerDescription1 small { color: #ffffff; line-height: 140%; font-weight: normal; margin: 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 { clear: both; float: none; }
-a:link { text-decoration: none; }
-a:focus { outline: none; }
+
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* header */
+/* Header Image (Other)*/
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
+.bodybg { font-family: Arial, Helvetica, sans-serif; background: url(../images/body-bg.jpg) center 62px no-repeat; margin-top: -39px;}
 #siteHeader { position: relative; float: left; height: 400px; width: 100%; z-index: 20; margin-top: 15px; }
 .headerDescription { position: absolute; top: 23%; left: 70px; width: 450px; }
 .headerDescription p.visibleH1 a { color: #045B76; font-size: 3em; line-height: 100%; font-weight: normal; margin-bottom: 10px; text-decoration: none; }
 .headerDescription p.visibleH2 { color: #0C8AA7; font-size: 2em; line-height: 140%; font-weight: normal; margin: 0; }
+
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
-/* navMain */
+/* navMain - Navigation Bar */
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+.nav_menu {
+  padding-right: 50px;
+}
 
 #navMain { position: fixed; z-index: 90; top: 0; left: 0; height: 63px; overflow-y: hidden; width: 100%; line-height: 150%; background: #1d2023 url(../images/nav-bg.png) top center repeat-x; }
 #navMain nav { width: 960px; margin: 0 auto; }
@@ -73,23 +132,19 @@ a:focus { outline: none; }
 #navMain li a { color: #dbe3e7; display: block; text-shadow: 0 1px 0 rgba(0,0,0,1); text-decoration: none; padding: 12px 25px 25px 25px; margin: -15px 1px 0 0; border-right: 1px solid rgba(255, 255, 255, 0); border-left: 1px solid rgba(255, 255, 255, 0); -webkit-transition: all .1s ease-in; -moz-transition: all .1s ease-in; -ms-transition: all .1s ease-in; -o-transition: all .1s ease-in; transition: all .1s ease-in; }
 .ie7 #navMain nav ul li a,
 .ie8 #navMain nav ul li a { border-right: 1px solid transparent; border-left: 1px solid transparent; }
-#navMain nav a:hover { background: rgba(255,255,255,0.1); border-left: 1px solid rgba(255, 255, 255, 0.07); border-right: 1px solid rgba(255, 255, 255, 0.07); color: white; }
+#navMain nav ul a:hover { background: rgba(255,255,255,0.1); border-left: 1px solid rgba(255, 255, 255, 0.07); border-right: 1px solid rgba(255, 255, 255, 0.07); color: white; }
 #navMain nav .active a,
 #navMain nav .current-page-ancestor a { background: rgba(255, 255, 255, 0.15); color: white; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7); position: relative; border-right: 1px solid rgba(255, 255, 255, 0.08); border-left: 1px solid rgba(255, 255, 255, 0.08); }
-.ie7 #navMain nav a:hover,
-.ie8 #navMain nav a:hover,
+.ie7 #navMain nav ul a:hover,
+.ie8 #navMain nav ul a:hover,
 .ie7 #navMain nav .active a,
 .ie7 #navMain nav .current-page-ancestor a,
 .ie8 #navMain nav .active a,
 .ie8 #navMain nav .current-page-ancestor a { background: #323538; border-left: 1px solid #404346; border-right: 1px solid #404346; }
-/* logo ---------------------------------------------------------------------------------------------------------------------------------- */
 
-#navMain h1 a { float: left; width: 255px; height: 63px; display: block; margin: -22.8px 60px 0 -54px; text-indent: -9999px; background: url('../images/webdeva.png') no-repeat 14px 16px; border-right: 1px solid rgba(255, 255, 255, 0); border-left: 1px solid rgba(255, 255, 255, 0); }
-.ie7 #navMain h1 a,
-.ie8 #navMain h1 a { border-right: 1px solid transparent; border-left: 1px solid transparent; }
-#navMain h1 a:hover { background: rgba(255,255,255,0.05) url('../images/webdeva.png') no-repeat 14px 16px; }
-.ie7 #navMain h1 a:hover,
-.ie8 #navMain h1 a:hover { background: #323538 url('../images/webdeva.png') no-repeat 14px 16px; border-left: 1px solid #404346; border-right: 1px solid #404346; }
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Border and Shadows - one-edge-shadow,1,2,3 */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .one-edge-shadow {
   border-right: 1.5px solid #9ab8ed; padding: 17px;
@@ -101,10 +156,6 @@ a:focus { outline: none; }
 background: -webkit-radial-gradient(50% 0%, 50% 15px, #EB8CF2 0%, white 100%);
 }
 
-#sub {
-  color: #7ba5e4;
-}
-
 .one-edge-shadow1 {
   border-right: 1px solid #9ab8ed;
   background: -webkit-radial-gradient(140% 50%, 50% 80%, #EB8CF2 60%, white 100%);
@@ -112,18 +163,6 @@ background: -webkit-radial-gradient(50% 0%, 50% 15px, #EB8CF2 0%, white 100%);
      -moz-box-shadow: 3px 0px 20px -2px #7ba5e4;
           box-shadow: 3px 0px 2px -2.5px #7ba5e4;
 }   
-
-.hr {
-  border: 1 dashed #7B7C7C;
-  height: 0.5em;
-}
-
-#post_bottom_border {
-  background-image: url('../images/sprite-1.png');
-  background-position: -332px -484px; 
-  width: 547px;
-  height: 22px;
-}
 
 .one-edge-shadow2 {
 
@@ -139,15 +178,38 @@ background: -webkit-radial-gradient(50% 0%, 50% 15px, #EB8CF2 0%, white 100%);
           box-shadow: 5px 0px 5px -3px gray;
 }
 
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Posts Bottom Shadow - post_bottom_border */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+#post_bottom_border {
+  background-image: url('../images/sprite-1.png');
+  background-position: -332px -484px; 
+  width: 547px;
+  height: 22px;
+}
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Subheading Nimbel Team on About page */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
+#sub {
+  color: #7ba5e4;
+}
+
+/*
 .social_border {
   border-right: 1.5px solid #9ab8ed; padding: 17px;
   border-radius: 1%;
   -webkit-box-shadow: 3px 0px 20px -2px #7ba5e4;
      -moz-box-shadow: 3px 0px 20px -2px #7ba5e4;
           box-shadow: 3px 0px 20px -2px #7ba5e4;
-}
+}*/
 
-/*typeahead.js search */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Search Box - Twitter typeahead.js */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
 .twitter-typeahead {
     width: 100%;
     position: relative;
@@ -228,7 +290,10 @@ background: -webkit-radial-gradient(50% 0%, 50% 15px, #EB8CF2 0%, white 100%);
   color: #ffffff;
 }
 
-/* blockquotes */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Blockquotes - Quick Tips */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
 @font-face {
   font-family: 'icons';
   src: url("font/icons.eot");
@@ -319,13 +384,13 @@ background: -webkit-radial-gradient(50% 0%, 50% 15px, #EB8CF2 0%, white 100%);
   color: #000;
 }
 
-/* #Content Social icons
-================================================== */
-
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Social Icons Showcase */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .widget_nav_menu{
   margin-left:0px;
-  margin-bottom:30px;
+  margin-bottom: 5px;
   display:inline-block;
   min-height:100%;
   height:100%;
@@ -408,9 +473,6 @@ margin:0px;
 .wordpress.normal {background: url(../images/social_icons/main_content/wordpress.png) no-repeat;}
 .yelp.normal {background: url(../images/social_icons/main_content/yelp.png) no-repeat;}
 
-
-/* #Footer Social icons
-================================================== */
 footer .socialIcons{
 margin-left:0px;
 }
@@ -486,7 +548,9 @@ footer .socialIcons li:hover {
 .wordpress {background: url(../images/social_icons/footer/wordpress.png) no-repeat;}
 .yelp {background: url(../images/social_icons/footer/yelp.png) no-repeat;}
 
-/******Back to top CSS, add to your stylesheet****/
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Back to top button CSS */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .back-to-top {
 position: fixed;
@@ -503,7 +567,9 @@ text-indent: -9999px;
 display: block;
 }
 
-/* ------- pagination -------- */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Pagination */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
  
 .pagination {
   height: 36px;
@@ -615,6 +681,13 @@ border-bottom:1px solid #575b61; color:white; }
   height: 39px;
 }
 
+.fish {
+  background-image: url('../images/sprite.png');
+  background-position: -10px -184px; 
+  width: 338px;
+  height: 180px;
+}
+
 .footer-border {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 2px;
@@ -628,14 +701,10 @@ border-bottom:1px solid #575b61; color:white; }
 .footer-end a { color:#535961; text-decoration:none; }
 .footer-end a:hover { color:#bdc8ce; }
 
-.fish {
-  background-image: url('../images/sprite.png');
-  background-position: -10px -184px; 
-  width: 338px;
-  height: 180px;
-}
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* 3D Button on Home page */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
-/* General button style (reset) */
 .btn1 {
   border: none;
   font-family: inherit;
@@ -709,15 +778,31 @@ border-bottom:1px solid #575b61; color:white; }
   transform: rotateX(15deg);
 }
 
+#d3 {  
+  color: #fff;
+}
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Sub Line on Home Page */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
 #line1 {
   line-height: 160%;
   color: #000000;
 }
 
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Texture bacground on Home Page */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+
 #backg {
   background: transparent url(../images/backg.png);
   overflow: hidden;
 }
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Widget Home Page */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .widget {
   font-family: inherit;
@@ -743,9 +828,54 @@ border-bottom:1px solid #575b61; color:white; }
     margin-right: auto;
 }
 
+.widget .ribbon {
+display: block;
+position: absolute;
+z-index: -1;
+width: 80px;
+height: 70px;
+padding-top: 16px;
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+text-shadow: 1px -1px rgba(0,0,0,.2);
+text-align: center;
+line-height: 18px;
+background: #008ccc;
+background: linear-gradient(180deg,#007bb3,#008ccc);
+transition: all 250ms;
+bottom: -70px;
+left: 39%;
+}
+
+.widget .ribbon:after {
+position: absolute;
+width: 80px;
+height: 13px;
+bottom: -13px;
+left: 0;
+background: url(../images/widget.png);
+content: '';
+}
+
+.ribbon a {
+   text-decoration:none; 
+   color:#ffffff; 
+   font-family:inherit
+}
+
+.ribbon a:hover { 
+   color:#ffffff; 
+   font-family:inherit;
+}
+
 .marg {
   padding-top: 6%;
 }
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* Pure CSS Animation South Downs */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 
 .south-downs {
 
@@ -918,55 +1048,7 @@ margin-left: -94px;
 background: transparent url(../images/waves/boat.png) no-repeat;
 }
 
-.widget .ribbon {
-display: block;
-position: absolute;
-z-index: -1;
-width: 80px;
-height: 70px;
-padding-top: 16px;
-color: #fff;
-font-size: 16px;
-text-transform: uppercase;
-text-shadow: 1px -1px rgba(0,0,0,.2);
-text-align: center;
-line-height: 18px;
-background: #008ccc;
-background: linear-gradient(180deg,#007bb3,#008ccc);
-transition: all 250ms;
-bottom: -70px;
-left: 39%;
-}
-
-.widget .ribbon:after {
-position: absolute;
-width: 80px;
-height: 13px;
-bottom: -13px;
-left: 0;
-background: url(../images/widget.png);
-content: '';
-}
-
-.ribbon a {
-   text-decoration:none; 
-   color:#ffffff; 
-   font-family:inherit
-}
-
-.ribbon a:hover { 
-   color:#ffffff; 
-   font-family:inherit;
-}
-
-#d3 {
-  
-  color: #fff;
-}
-
 /*Lets start with the cloud formation rather*/
-
-/*The container will also serve as the SKY*/
 
 #clouds1{
   padding: 100px 0;
@@ -1104,3 +1186,7 @@ content: '';
   0% {margin-left: -1000px;}
   100% {margin-left: 1000px;}
 }
+
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* End of - Pure CSS Animation South Downs */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
