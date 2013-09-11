@@ -63,4 +63,4 @@ This project would come with some **goals**:
 
 ## License
 
-**MIT :** http://dev-dipesh.mit-license.org/
+**MIT :** [http://dev-dipesh.mit-license.org/](http://jsbin.com/erezijI/2)
